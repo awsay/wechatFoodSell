@@ -1,0 +1,30 @@
+<!--pages/personData/personData.wxml-->
+<view wx:if="{{!isModify}}" class='box'>
+  <view class='card'>
+    <view class='cardItem'>姓名：{{name}}</view>
+    <view class='cardItem'>性别：{{sex}}</view>
+    <view class='cardItem'>手机号：{{phone}}</view>
+    <button size='mini' bindtap='changeisModify' style='margin-top:30rpx'>修改</button>
+  </view>
+</view>
+<view wx:else class='boxB'> 
+    <text>姓名：</text>
+    <input type='text' value='{{name}}' bindinput="bindNameInput" style='width:270rpx;height:70rpx;margin-bottom:30rpx;'></input>
+
+    <text>性别：</text>
+    <radio-group bindchange="bindSexInput" style='margin-bottom:40rpx'>     
+       <label class="radio" style='margin-right:40rpx'><radio value="男"/>男</label>
+       <label class="radio"><radio value="女"/>女</label>
+    </radio-group>
+
+    <view style='margin-bottom:30rpx'>手机号：{{phone}}</view>
+    <button wx:if="{{!isPhoneModify}}" type='primary' bindtap='changeIsPhoneModify'>绑定/修改手机号</button>
+    <view wx:if="{{isPhoneModify}}">
+       <input type='number' placeholder='请输入手机号' bindinput='bindPhomeInput'></input>
+       <button type='primary' bindtap='getyan' disabled='{{buttonDis}}'>{{miao}}</button>
+       <input type='number' placeholder='请输入验证码' bindinput="bindYanInput"></input>
+    </view>
+
+    <button type='primary' bindtap='submit'>提交</button>
+    <button bindtap='changeisModify'>返回</button>
+  </view>

@@ -1,0 +1,27 @@
+<!--pages/class/class.wxml-->
+<view class='classBox'>
+  <view class='classList'>
+     <image src='../../img/Ckuaican.png' lazy-load='true' style='width:250rpx;height:250rpx;' data-type='小吃' bindtap="navto"></image>
+     <view>办公用品</view>
+  </view>
+  <view class='classList'>
+     <image src='../../img/Czhaji.png' lazy-load='true' style='width:200rpx;height:200rpx' data-type='套餐' bindtap="navto"></image>
+     <view>书本</view>
+  </view>
+  <view class='classList'>
+     <image src='../../img/Ctangzhou.png' lazy-load='true' style='width:200rpx;height:200rpx' data-type='主食' bindtap="navto"></image>
+     <view>文具</view>
+  </view>
+  <view class='classList'>
+     <image src='../../img/Cdifang.png' lazy-load='true' style='width:200rpx;height:200rpx' data-type='炒菜' bindtap="navto"></image>
+     <view>电子配件</view>
+  </view>
+  <view class='classList'>
+     <image src='../../img/Ctiandian.png' lazy-load='true' style='width:200rpx;height:200rpx' data-type='甜点' bindtap="navto"></image>
+     <view>书柜</view>
+  </view>
+  <view class='classList'>
+     <image src='../../img/Czhoufen.png' lazy-load='true' style='width:200rpx;height:200rpx' data-type='面食' bindtap="navto"></image>
+     <view>座椅</view>
+  </view>
+</view>

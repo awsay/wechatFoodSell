@@ -1,0 +1,15 @@
+<view class='item' wx:if='{{!addressArray.length}}'>
+  暂无收货地址
+</view>
+<view wx:else>
+  <view class='item' wx:for="{{addressArray}}">
+     {{item}}
+  </view>
+</view>
+<view wx:if='{{inputField}}'>
+  <textarea style='margin:20rpx;' bindinput="bindTextareaInput" auto-height placeholder="输入您的详细地址" />
+  <button type='primary' bindtap='submit'>确认</button>
+</view>
+<view class='butAdd'>
+   <image bindtap='add' src='../../img/addFood.png' style='width:90rpx; height:90rpx'></image>
+</view>

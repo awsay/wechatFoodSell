@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/class/class",
+    "pages/menu/menu",
+    "pages/person/person",
+    "pages/personData/personData",
+    "pages/personAdv/personAdv",
+    "pages/personAdr/personAdr",
+    "pages/personAbout/personAbout",
+    "pages/classpage/classpage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "青春校驿站",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "img/home.png",
+        "selectedIconPath": "img/home2.png"
+      },
+      {
+        "pagePath": "pages/class/class",
+        "text": "分类",
+        "iconPath": "img/classify2.png",
+        "selectedIconPath": "img/classify.png"
+      },
+      {
+        "pagePath": "pages/menu/menu",
+        "text": "订单",
+        "iconPath": "img/menu.png",
+        "selectedIconPath": "img/menu2.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我",
+        "iconPath": "img/me.png",
+        "selectedIconPath": "img/me2.png"
+      }
+    ]
+  }
+}

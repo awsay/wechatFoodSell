@@ -1,0 +1,21 @@
+<!--index.wxml-->
+  <view class="userinfo" wx:if="{{hasUserInfo}}">   
+      <image class="userinfo-avatar" src="{{data.userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{data.userInfo.nickName}}</text>
+  </view>
+  <view class="userinfo" wx:else>   
+      <image class="userinfo-avatar" src="../../img/me.png" background-size="cover"></image>
+      <text class="userinfo-nickname"></text>
+  </view>
+
+  <view class='c4ontain' wx:if="{{codeGetState}}">
+    <view class='containList' id='dataBtn' bindtap="navto"><image src='../../img/personInf.png' lazy-load='true'></image>个人信息<image class='to' src='../../img/tototo.png'></image></view>
+    <view class='containList' id='addrBtn' bindtap="navto"><image src='../../img/address.png' lazy-load='true'></image>我的地址<image class='to' src='../../img/tototo.png'></image></view>
+    <view class='containList' id='advBtn' bindtap="navto"><image src='../../img/sendMes.png' lazy-load='true'></image>我要反馈<image class='to' src='../../img/tototo.png'></image></view>
+    <view class='containList' id='aboutBtn' bindtap="navto"><image src='../../img/aboutus.png' lazy-load='true'></image>关于我们<image class='to' src='../../img/tototo.png'></image></view>
+  </view>
+  
+  <view class='logining' wx:else>
+      正在登录...
+  </view>
+ 

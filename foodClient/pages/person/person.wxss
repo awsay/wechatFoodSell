@@ -1,0 +1,41 @@
+/**index.wxss**/
+.userinfo {
+  padding: 30rpx 0;
+  background-color: #1296db
+}
+.userinfo-avatar {
+  display: block;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 30rpx auto;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 20rpx;
+  color: white;
+}
+.logining {
+  margin: 20rpx;
+}
+.containList{
+  position: relative;
+  height: 110rpx;
+  line-height: 110rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+  color: #707070;
+}
+.containList image{
+  margin: 0 30rpx;
+  width:50rpx; 
+  height:50rpx; 
+  vertical-align:middle;
+}
+.containList .to{
+  position: absolute;
+  top: 32rpx;
+  right: 0rpx;
+  margin-right: 15rpx;
+}

@@ -1,0 +1,11 @@
+<view style="text-align:center">我的订单</view>
+<view wx:if='{{myOrder.length==0}}' style='text-align:center'>
+   你暂无订单
+</view>
+<view wx:for='{{myOrder}}'>
+<text>{{index}}.</text>
+<text>{{item.name}}</text>
+<image src='{{item.imgsrc}}'></image>
+<view>{{item.statement}}</view>
+</view>
+

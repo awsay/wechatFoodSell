@@ -1,0 +1,12 @@
+.classBox{
+  padding-top: 40rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.classList{
+  width: 50%;
+  margin-bottom: 40rpx;
+  text-align: center;
+}
+  

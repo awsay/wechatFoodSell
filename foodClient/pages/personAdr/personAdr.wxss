@@ -1,0 +1,11 @@
+.item{
+  text-align: center;
+  padding: 40rpx 30rpx;
+  background: gainsboro;
+  border-bottom: solid 1rpx gray;
+}
+.butAdd{
+  padding: 40rpx 50rpx;
+  text-align:center;
+}
+/* pages/personAdr/personAdr.wxss */

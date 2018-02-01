@@ -1,0 +1,30 @@
+<view class="topTitle">{{topTitle}}</view>
+<view wx:if="{{itemData.length==0}}" class='boxLoading'>
+    loading...
+</view>
+<view wx:else class='box'>
+    <view class='boxItem' wx:for="{{itemData}}"> 
+      <view class='boxItemInner'>
+            <view class='boxItemImgWrap'>
+                <image src='{{item.imgUrl}}' style='width:100%'></image>  
+            </view>      
+            <view class='boxItemName'>{{item.name}}</view>
+            <!-- <view class='boxItemNote'>{{item.note}}</view> -->
+            <view class='boxItemPri'>
+              <image src='../../img/price.png' style='width:33rpx;height:29rpx'></image>
+              <text>{{item.price}}</text> 
+              <image data-hi="{{item}}" src='../../img/addFood.png' style='width:55rpx;height:55rpx' class='boxItemAdd'  bindtap='addItem'></image>
+            </view>
+      </view>
+    </view>
+</view>
+<view class='botNote'>{{botNote}}</view>
+
+<view class='gou' wx:if='{{total}}' style='height:{{gouHei}}'>
+<view bindtap='gouHei' style='text-align:center'><image src='../../img/hide.png' style='width:60rpx; height:60rpx;'></image></view>
+<view wx:for="{{gou}}">
+  {{item.name}} {{item.price}}元  <image data-del='{{index}}' src='../../img/jian.png' style='width:45rpx; height:45rpx; margin-left:20rpx' bindtap='delItem'></image>
+</view>
+<view>总价<text style='color:red'>{{total}}</text>元</view>
+<button size='mini' type='primary' bindtap='payment' style='width:600rpx;display:inline;margin-left:100rpx;line-height:80rpx;font-size:larger;'>结算</button>
+</view>

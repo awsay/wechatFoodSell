@@ -1,0 +1,18 @@
+  <view class='left'>
+    <view bindtap="tap" class='' id="menu1">菜单一</view>
+    <view bindtap="tap" id="menu2">菜单二</view>
+    <view bindtap="tap" id="menu3">菜单三</view>
+    <view bindtap="tap" id="menu4">菜单四</view>
+    <view bindtap="tap" id="menu5">菜单五</view>
+    <view bindtap="tap" id="menu6">菜单六</view>
+  </view>
+  <scroll-view class='right' scroll-y bindscroll="scroll" scroll-into-view="{{toView}}" scroll-with-animation='true'>
+    <view id="menu1" class="scroll-view-item">
+       menu1
+    </view>
+    <view id="menu2"  class="scroll-view-item">menu2</view>
+    <view id="menu3" class="scroll-view-item">menu3</view>
+    <view id="menu4" class="scroll-view-item">menu4</view>
+    <view id="menu5" class="scroll-view-item">menu5</view>
+    <view id="menu6" class="scroll-view-item">menu6</view>
+  </scroll-view>

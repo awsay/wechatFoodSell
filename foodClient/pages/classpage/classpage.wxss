@@ -1,0 +1,65 @@
+
+.topTitle{
+  line-height: 70rpx;
+  text-align: center;
+}
+.box{
+  width: 100%;
+  overflow: hidden;
+  background: #f8f8f8;
+}
+.boxLoading{
+  text-align: center;
+  line-height: 200rpx;
+}
+.boxItem{
+  width: 48%;
+  height: 560rpx;
+  padding: 1%;
+  float:left;
+  background: #f8f8f8;
+}
+.boxItemInner{
+   height: 550rpx;
+   margin: 10rpx 10rpx 0;
+   background: white;
+}
+.boxItemImgWrap{
+  width: 90%;
+  margin: auto;
+  height: 380rpx;
+  overflow: hidden;
+}
+.boxItemName{
+  font-weight: bolder;
+  margin-left:5%;
+  line-height: 60rpx;
+  color: grey;
+}
+.boxItemNote{
+  font-size: smaller;
+  margin-left: 5%;
+}
+.boxItemPri{
+ margin:10rpx 0 0 5%;
+ position: relative;
+}
+.boxItemAdd{
+  position: absolute;
+  right: 10rpx;
+}
+.botNote{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.gou{
+  width: 100%;
+  background:ghostwhite;
+  padding:0 20rpx 20rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0rpx;
+  font-size: larger;
+}
+/* pages/classpages/classpage.wxss */
